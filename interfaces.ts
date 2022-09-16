@@ -69,3 +69,10 @@ const newUserList = {
   0: newUser,
   1: newUser2,
 }
+
+// types vs interface
+type ID = string | number; // type - для примитивных типов данных и объединения их с помощью | или &
+
+interface ID2 {
+  ID: string | number; // interface - для объектов и классов
+}
